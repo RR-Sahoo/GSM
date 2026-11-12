@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="800" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1F3A"/>
+      <stop offset="60%" stop-color="#102C4E"/>
+      <stop offset="100%" stop-color="#0D3B3E"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#173D6E"/>
+      <stop offset="100%" stop-color="#0A1E36"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="540" rx="24" fill="url(#sky)"/>
+  <circle cx="640" cy="115" r="170" fill="url(#sun)"/>
+  <circle cx="640" cy="115" r="42" fill="#10B981" fill-opacity="0.25" stroke="#34D399" stroke-width="2"/>
+  <circle cx="640" cy="115" r="22" fill="#34D399"/>
+
+  <!-- Subtle architectural grid -->
+  <g opacity="0.12" stroke="#93C5FD" stroke-width="1">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+  </g>
+
+  <!-- Rooftop building base -->
+  <path d="M70 430 L730 430 L730 490 L70 490 Z" fill="#081629"/>
+  <rect x="70" y="422" width="660" height="10" rx="4" fill="#1E3A5F"/>
+
+  <!-- Solar Array 1 -->
+  <g transform="translate(115, 250) skewX(-18)">
+    <rect x="0" y="0" width="210" height="145" rx="6" fill="url(#panel)" stroke="#38BDF8" stroke-width="2.5"/>
+    <g stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.2">
+      <line x1="52" y1="0" x2="52" y2="145"/>
+      <line x1="105" y1="0" x2="105" y2="145"/>
+      <line x1="158" y1="0" x2="158" y2="145"/>
+      <line x1="0" y1="36" x2="210" y2="36"/>
+      <line x1="0" y1="72" x2="210" y2="72"/>
+      <line x1="0" y1="108" x2="210" y2="108"/>
+    </g>
+  </g>
+  <rect x="145" y="395" width="8" height="28" fill="#64748B"/>
+  <rect x="265" y="395" width="8" height="28" fill="#64748B"/>
+
+  <!-- Solar Array 2 -->
+  <g transform="translate(360, 225) skewX(-18)">
+    <rect x="0" y="0" width="235" height="165" rx="6" fill="url(#panel)" stroke="#34D399" stroke-width="2.5"/>
+    <g stroke="#34D399" stroke-opacity="0.35" stroke-width="1.2">
+      <line x1="58" y1="0" x2="58" y2="165"/>
+      <line x1="117" y1="0" x2="117" y2="165"/>
+      <line x1="176" y1="0" x2="176" y2="165"/>
+      <line x1="0" y1="41" x2="235" y2="41"/>
+      <line x1="0" y1="82" x2="235" y2="82"/>
+      <line x1="0" y1="123" x2="235" y2="123"/>
+    </g>
+  </g>
+  <rect x="395" y="390" width="8" height="32" fill="#64748B"/>
+  <rect x="520" y="390" width="8" height="32" fill="#64748B"/>
+
+  <!-- Energy Flow Card -->
+  <g transform="translate(55, 55)">
+    <rect width="260" height="84" rx="14" fill="#0F294A" fill-opacity="0.92" stroke="#1E4B7A"/>
+    <circle cx="36" cy="42" r="16" fill="#10B981" fill-opacity="0.2"/>
+    <path d="M38 30 L28 44 H36 L34 54 L44 40 H36 Z" fill="#34D399"/>
+    <text x="66" y="36" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Solar &amp; Power Solutions</text>
+    <text x="66" y="57" fill="#34D399" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Up to 1 MW Project Capability</text>
+  </g>
+
+  <text x="70" y="468" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Placeholder visual — Replace with genuine GSM Solar Light installation photo via CMS</text>
+</svg>

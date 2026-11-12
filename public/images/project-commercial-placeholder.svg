@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <rect width="600" height="380" rx="16" fill="#0F294A"/>
+  <rect x="36" y="36" width="528" height="308" rx="12" fill="#0B1F3A" stroke="#1E4B7A"/>
+  <g transform="translate(155, 85) skewX(-14)">
+    <rect width="270" height="130" rx="8" fill="#163F6E" stroke="#34D399" stroke-width="2.5"/>
+    <line x1="67" y1="0" x2="67" y2="130" stroke="#34D399" stroke-opacity="0.4"/>
+    <line x1="135" y1="0" x2="135" y2="130" stroke="#34D399" stroke-opacity="0.4"/>
+    <line x1="202" y1="0" x2="202" y2="130" stroke="#34D399" stroke-opacity="0.4"/>
+    <line x1="0" y1="43" x2="270" y2="43" stroke="#34D399" stroke-opacity="0.4"/>
+    <line x1="0" y1="86" x2="270" y2="86" stroke="#34D399" stroke-opacity="0.4"/>
+  </g>
+  <text x="300" y="256" text-anchor="middle" fill="#34D399" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">COMMERCIAL • ROOFTOP SOLAR</text>
+  <text x="300" y="284" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Commercial Building & Shop Solar</text>
+  <text x="300" y="312" text-anchor="middle" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Sample placeholder — Upload approved site photography in CMS</text>
+</svg>
