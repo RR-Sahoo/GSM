@@ -1,6 +1,6 @@
 # GSM Solar Light — Website & Staff CMS
 
-Built for **GSM Solar Light** (Mathura, Uttar Pradesh, India) using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **SQLite** (`better-sqlite3`).
+Built for **GSM Solar Light** (Mathura, Uttar Pradesh, India) using **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and a file-backed JSON store (`data/gsm-store.json`).
 
 ## Quick Start
 
@@ -31,18 +31,17 @@ Built for **GSM Solar Light** (Mathura, Uttar Pradesh, India) using **Next.js (A
   - Toggle `Use "Get a Free Consultation"` wording (disabled until client confirms).
   - Toggle `Publish Product Prices publicly` (disabled by default for enquiry-only pricing).
 
-## Backup & Restore (SQLite + Uploaded Media)
+## Backup & Restore (JSON Store + Uploaded Media)
 
-All CMS data lives in `data/gsm.db` and uploaded files live in `public/uploads/`.
+All CMS data lives in `data/gsm-store.json` (or `/tmp/gsm-solar-data/gsm-store.json` on serverless preview hosts) and uploaded files live in `public/uploads/`.
 
 ### Backup
 ```bash
-sqlite3 data/gsm.db ".backup 'backup-gsm-$(date +%F).db'"
-tar -czf backup-uploads-$(date +%F).tar.gz public/uploads/
+cp data/gsm-store.json "backup-gsm-$(date +%F).json"
+tar -czf "backup-uploads-$(date +%F).tar.gz" public/uploads/
 ```
 
 ### Restore
 1. Stop the Node process.
-2. Replace `data/gsm.db` with your backup file and extract `public/uploads/`.
+2. Replace `data/gsm-store.json` with your backup file and extract `public/uploads/`.
 3. Restart the application (`npm run start`).
-
